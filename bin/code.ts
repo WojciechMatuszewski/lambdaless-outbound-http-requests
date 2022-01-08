@@ -4,4 +4,6 @@ import * as cdk from "aws-cdk-lib";
 import { CodeStack } from "../lib/code-stack";
 
 const app = new cdk.App();
-new CodeStack(app, "CodeStack");
+new CodeStack(app, "CodeStack", {
+  synthesizer: new cdk.DefaultStackSynthesizer({ qualifier: "less" })
+});
