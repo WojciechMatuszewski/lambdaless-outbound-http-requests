@@ -12,3 +12,4 @@ Three ways of making outbound HTTP requests without using _AWS Lambda_.
 
 - Manually execute the deployed state machines.
 - Manually push messages to the deployed topic.
+- Execute the deployed GraphQL endpoint. Could be done via [_Postman_](https://learning.postman.com/docs/sending-requests/supported-api-frameworks/graphql/)

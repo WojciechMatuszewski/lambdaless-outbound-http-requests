@@ -58,7 +58,9 @@ export class AppSyncHTTPResolver extends Construct {
       })
     );
 
-    // Required, API has to have `Query` operation defined
+    /**
+     * Your API will not deploy successfully without a `Query` operation of some kind.
+     */
     api.addQuery(
       "mockQuery",
       new aws_appsync.ResolvableField({
